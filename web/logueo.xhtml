@@ -10,9 +10,7 @@
 
         <ui:composition template="./templates/template.xhtml">
 
-            <ui:define name="top">
-                top
-            </ui:define>
+            
 
             <ui:define name="content">
                 <div id="caja">
@@ -27,18 +25,28 @@
                             <p:password id="password" value="#{userLoginView.password}" required="true" label="password" />
 
                             <f:facet name="footer">
+                                <div  class="col-md-6 col-md-offset-3">
                                 <p:commandButton value="Login" update="growl" actionListener="#{userLoginView.login}"
                                                  oncomplete="handleLoginRequest(xhr, status, args)" />
+                                </div>
                             </f:facet>  
                         </h:panelGrid>
+                        <script type="text/javascript">
+                            function handleLoginRequest(xhr, status, args) {
+                                if(args.validationFailed || !args.loggedIn) {
+                                    
+                                }
+                                else {
+                                    window.location = "faces/principal.xhtml";
+                                }
+                            }
+                        </script>
 
                 </h:form>
                 </div>
             </ui:define>
 
-            <ui:define name="bottom">
-                bottom
-            </ui:define>
+            
 
         </ui:composition>
 
