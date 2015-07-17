@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./templates/header.xhtml">
+
+            <ui:define name="content">
+                
+<div class="container">
+
+
+<form action="#" method="post" class="form-horizontal" id="Admisionform" role="form">
+	<div class="col-md-6">
+		<div class="form-group">
+			<label class="control-label col-md-3" >N Corelativo:</label>
+			<div class="col-md-9">
+                            <input class="form-control" placeholder="Procedencia" disabled="disabled"  value="#{validationView.text}"></input>
+                            <h:outputText value="#{validationView.text}" />
+			</div>
+		</div>  
+		<div class="form-group">
+			<label class="control-label col-md-3" >N orden:</label>
+			<div class="col-md-9">
+                            <input class="form-control" placeholder="Procedencia" disabled="disabled" value="#{validationView.integer}"></input>
+			</div>
+		</div>
+	
+	<div class="form-group">
+		<label class="control-label col-md-3">fecha:</label>
+		<div class="col-md-9">
+			<input class="form-control" disabled="disabled" value="#{validationView.text}"></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-md-3">Hora:</label>
+		<div class="col-md-9" id="reloj">
+			
+		</div>
+	</div>
+	</div>
+    <div class="col-md-6">
+		<div class="form-group">
+			<label class="control-label col-md-3">Personal:</label>
+			<div class="col-md-9">
+				<select class="form-control" name="Personal">
+					<option value="" disabled="" selected="" id="selected">Personal</option>
+					<option>Oficial</option>
+					<option>Tecnicos</option>
+					<option>Sub Oficiales</option>
+					<option>Servicio Militar</option>
+					<option>Reenganchado</option>
+					<option>Familiar</option>
+					<option>Empleado Civil</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-md-3"></label>
+			<div class="col-md-9">
+                            <input class="form-control" placeholder="Personal"></input>
+			</div>
+		</div>
+	<div class="form-group">
+		<label class="control-label col-md-3">Unidad:</label>
+		<div class="col-md-9">
+                    <input class="form-control" placeholder="Unidad"></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-md-3">Procedencia:</label>
+		<div class="col-md-9">
+                    <input class="form-control" placeholder="Procedencia"></input>
+		</div>
+	</div>    
+	<div class="form-group">
+        <label for="consultorio" class="control-label col-md-3">Especialidad</label>
+        <div class="col-md-9">
+          <select class="form-control" name="consultorio" id="consultorio">
+			<option value="" disabled="" selected="" id="selected">Especialidad</option>          
+          	<option>Medicina general</option>	
+          	<option>obstetricia</option>	
+          	<option>Odontologia</option>	
+          	<option>Psicologia</option>	
+          	<option>Reabilitacion</option>	
+          </select>
+        </div>
+	</div>
+	<div class="form-group">
+        <label for="consultorio" class="control-label col-md-3 ">Medico</label>
+        <div class="col-md-9">
+          <select class="form-control" name="sonsultorio" id="consultorio">
+          	<option value="" disabled="" selected="" id="selected">Medico</option>
+          	<option>Medico 1</option>	
+          	<option>Medico 2</option>	
+          	<option>Medico 3</option>	
+          	<option>Medico 4</option>	
+          	<option>Medico 5</option>	
+          	
+          </select>
+        </div>
+	</div>
+	</div>
+	
+
+</form>
+
+</div>
+            </ui:define>
+
+            <ui:define name="bottom">
+                bottom
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

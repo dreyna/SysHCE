@@ -8,7 +8,7 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <h:outputStylesheet name="css/default.css"/>
+       
         <h:outputStylesheet name="css/cssLayout.css"/>
         <h:outputStylesheet name="css/bootstrap.min.css"/>
         <h:outputStylesheet name="css/estilo.css"/>
@@ -28,190 +28,144 @@
 <header>
 		<nav class="navbar navbar-default navbar-inverse">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" >
-						<span class="sr-only">Menu</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					
-					<a href="#" class="navbar-brand">Pentagonito</a>
-				</div>
-				<div class="collapse navbar-collapse" id="navbar-1">
-					<ul class="nav navbar-nav">
-						<li><a href="">Personal</a></li>
-						<li><a href="">Medicamento</a></li>
-						<li class="active"><a href="">Horario</a></li>
-						
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-list"> <span class="badge">14</span></span> Pasientes<span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-cart" role="menu">
-              <li>
-                  <span class="item">
-                    <span class="item-left">
-                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
-                        
-                        <span class="item-info">
-                            <span>Paciente 1</span>
-                            <span>Consulta</span>
-                        </span>
-                    </span>
-                    
-                </span>
-              </li>
-              <li>
-                  <span class="item">
-                    <span class="item-left">
-                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
-                        <span class="item-info">
-                            <span>Paciente 2</span>
-                            <span>Consulta</span>
-                        </span>
-                    </span>
-                   
-                </span>
-              </li>
-              <li>
-                  <span class="item">
-                    <span class="item-left">
-                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
-                        <span class="item-info">
-                            <span>Paciente 3</span>
-                            <span>Consulta</span>
-                        </span>
-                    </span>
-                   
-                </span>
-              </li>
-              <li>
-                  <span class="item">
-                    <span class="item-left">
-                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
-                        <span class="item-info">
-                            <span>Paciente 4</span>
-                            <span>Consulta</span>
-                        </span>
-                    </span>
-                    
-                </span>
-              </li>
-              <li class="divider"></li>
-              <li><a class="text-center" href="">Ver mas</a></li>
-          </ul>
-        </li>
+                            <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" >
+                                            <span class="sr-only">Menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                    </button>
 
-						
-					</ul>
-							<div class="col-xs-12 col-sm-2 col-md-3 col-lg-3">
-							<form class="navbar-form navbar-left">
-							<div class="input-group " id="adv-search">
-					
-                			<input type="text" class="form-control" placeholder="Codigo o DNI" />
-                			<div class="input-group-btn">
-                   				 <div class="btn-group" role="group">
-                       				 <div class="dropdown dropdown-lg">
-                           				 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
-                           				 <div class="dropdown-menu dropdown-menu-right" role="menu">
-                               				 
-                                  
-                                 				 <div class="form-group">
-                                 				   <label  class="control-label col-md-2 " for="contain">Nombre</label>
-                                  				  <div class="col-md-11">
-                                    	<input class="form-control" type="text" />
-                                  				  </div>
-                                    
-                                  				</div>
-                                  				<div class="form-group col-md-12" >
-                                   				 <label  class="control-label col-md-2" for="contain">Apellido</label>
-                                   				 <div class="col-md-10">
-                                    	<input class="form-control" type="text" />
-                                   				 </div>
-                                    
-                                 				 </div>
-                                  <button type="submit" class="btn btn-primary col-md-12"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                               				 
-                            				</div>
-                       				 </div>
-                       				 <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                    				</div>
-               				 </div>
-            				</div>
-            				</form>
-            				</div>
-            		
-            			
+                                    <a href="#" class="navbar-brand">Pentagonito</a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbar-1">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-md-offset-1 col-lg-4">
+                                    <form class="navbar-form navbar-left">
+                                        <div class="input-group" id="adv-search">
+                                            
+                                            <input type="text" class="form-control" placeholder="Codigo o DNI" />
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                            </div>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                               
 
-					
-					
-            		
-					
-
-					<ul class="nav navbar-nav navbar-right">
-						
-						<p class="navbar-text">usuario</p>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" style="padding-top: 5px; padding-bottom: 5px;">
-                                                            <h:graphicImage library="img" name="img_doctor.jpg" width="40px" height="40px" class="img-circle" style="background-size: 32px 32px;"/>
-                                                            
-							</a>
-							<ul class="dropdown-menu">
+                                    <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-list"> <span class="badge">14</span></span> Pasientes<span class="caret"></span></a>
+                                        <ul class="dropdown-menu dropdown-cart" role="menu">
                                             <li>
-                                                <div class="navbar-content">
-                                                    <div class="row">
-                                                        <div class="col-md-5">
-                                                            <img src="http://placehold.it/120x120"
-                                                                 alt="Alternate Text" class="img-responsive"></img>
-                                                            <p class="text-center small">
-                                                                <a href="#">Change Photo</a></p>
-                                                        </div>
-                                                        <div class="col-md-7">
-                                                            <span>Bhaumik Patel</span>
-                                                            <p class="text-muted small">
-                                                                mail@gmail.com</p>
-                                                            <div class="divider">
-                                                            </div>
-                                                            <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="navbar-footer">
-                                                    <div class="navbar-footer-content">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <a href="#" class="btn btn-default btn-sm">Change Passowrd</a>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <a href="#" class="btn btn-default btn-sm pull-right">Sign Out</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <span class="item">
+                                                    <span class="item-left">
+                                                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
+
+                                                        <span class="item-info">
+                                                            <span>Paciente 1</span>
+                                                            <span>Consulta</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
                                             </li>
-                                        </ul>
-						</li>
-					</ul>
-				</div>
+                                            <li>
+                                                <span class="item">
+                                                    <span class="item-left">
+                                                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
+                                                        <span class="item-info">
+                                                            <span>Paciente 2</span>
+                                                            <span>Consulta</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="item">
+                                                    <span class="item-left">
+                                                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
+                                                        <span class="item-info">
+                                                            <span>Paciente 3</span>
+                                                            <span>Consulta</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="item">
+                                                    <span class="item-left">
+                                                        <h:graphicImage library="img" name="img_paciente.jpg" width="50px" height="50px" alt=""/>
+                                                        <span class="item-info">
+                                                            <span>Paciente 4</span>
+                                                            <span>Consulta</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                          <li class="divider"></li>
+                                          <li><a class="text-center" href="">Ver mas</a></li>
+                                      </ul>
+                                    </li>
+
+                                            <p class="navbar-text">usuario</p>
+                                            <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" style="padding-top: 5px; padding-bottom: 5px;">
+                                                        <h:graphicImage library="img" name="img_doctor.jpg" width="40px" height="40px" class="img-circle" style="background-size: 32px 32px;"/>
+
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="navbar-content">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-md-5">
+                                                        <img src="http://placehold.it/120x120"
+                                                             alt="Alternate Text" class="img-responsive"></img>
+                                                        <p class="text-center small">
+                                                            <a href="#">Change Photo</a></p>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <span>Bhaumik Patel</span>
+                                                        <p class="text-muted small">
+                                                            mail@gmail.com</p>
+                                                        <div class="divider">
+                                                        </div>
+                                                        <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navbar-footer">
+                                                <div class="navbar-footer-content">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <a href="#" class="btn btn-default btn-sm">Change Passowrd</a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <a href="#" class="btn btn-default btn-sm pull-right">Sign Out</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                            </li>
+                                    </ul>
+                            </div>
 			</div>
 			
 		</nav>
   
 </header> 
 
-        <div id="top">
-            
-<ui:insert name="content">top</ui:insert>
-
-
+<!--    <div id="top">     
+            <ui:insert name="top">top</ui:insert>
         </div>
-
+-->
         <div id="content" class="center_content">
-            <ui:insert name="content">Content</ui:insert>
+            <ui:insert name="content"></ui:insert>
         </div>
 
         <div id="bottom">
-            
-            
+            <ui:insert name="bottom">bottom</ui:insert>      
         </div>
             <h:outputScript name="js/jquery.js" />
             <h:outputScript name="js/bootstrap.min.js" />
